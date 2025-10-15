@@ -104,6 +104,11 @@ whatweb http://target.com
 dirsearch -u http://target.com -e php,html,txt -t 40
 ```
 
+```bash
+nmap -p 80,443 101.201.73.188
+python3 dirsearch.py -u http://101.201.73.188 -e html,txt -t 10
+```
+
 ### 🔹 SQL 注入
 ```bash
 sqlmap -u "http://target.com/item?id=1" --batch --random-agent
