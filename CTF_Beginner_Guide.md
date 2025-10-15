@@ -141,6 +141,7 @@ Burp Suite、sqlmap、ffuf、dirsearch、nikto
 
 ---
 
+<a id="2-pwn程序漏洞利用"></a>
 ## 2️⃣ Pwn（程序漏洞利用）
 
 ### 🔹 初步分析
@@ -179,6 +180,7 @@ gdb + pwndbg, pwntools, checksec, ROPgadget, Ghidra
 
 ---
 
+<a id="3-reverse逆向分析"></a>
 ## 3️⃣ Reverse（逆向分析）
 
 ### 🔹 静态分析
@@ -201,6 +203,7 @@ frida -U -f com.example.app -l script.js --no-pause
 
 ---
 
+<a id="4-crypto密码学"></a>
 ## 4️⃣ Crypto（密码学）
 
 ### 🔹 编码识别
@@ -229,6 +232,7 @@ hashcat -m 0 hash.txt wordlist.txt
 
 ---
 
+<a id="5-forensics取证"></a>
 ## 5️⃣ Forensics（取证）
 
 ### 🔹 文件分析
@@ -249,6 +253,7 @@ volatility -f mem.dmp --profile=Win7SP1x64 pslist
 
 ---
 
+<a id="6-stego--misc隐写与杂项"></a>
 ## 6️⃣ Stego / Misc（隐写）
 
 ### 🔹 图片隐写
@@ -266,6 +271,7 @@ cat file.txt | base64 -d | xxd -r -p | gunzip > out
 
 ---
 
+<a id="7-network流量分析"></a>
 ## 7️⃣ Network（流量分析）
 
 ### 🔹 抓包
@@ -280,6 +286,7 @@ tshark -r capture.pcap -Y 'http' -T fields -e http.host -e http.request.uri
 
 ---
 
+<a id="8-mobile移动安全"></a>
 ## 8️⃣ Mobile（移动安全）
 
 ### 🔹 反编译 APK
@@ -298,6 +305,7 @@ frida -U -f com.example.app -l hook.js --no-pause
 
 ---
 
+<a id="9-osint公开情报收集"></a>
 ## 9️⃣ OSINT（公开情报）
 
 ### 🔹 域名分析
